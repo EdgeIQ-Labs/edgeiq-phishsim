@@ -497,23 +497,23 @@ def home():
       </div>
 
       <script>
-      async function startCheckout(plan) {
+      async function startCheckout(plan) {{
         var email = prompt("Enter your email address to continue:");
         if (!email) return;
         email = email.trim();
-        if (!email.includes("@")) { alert("Please enter a valid email."); return; }
-        try {
-          var resp = await fetch("https://api.edgeiqlabs.com/phishsim-checkout", {
+        if (!email.includes("@")) {{ alert("Please enter a valid email."); return; }}
+        try {{
+          var resp = await fetch("https://api.edgeiqlabs.com/phishsim-checkout", {{
             method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ plan: plan, email: email })
-          });
-          if (!resp.ok) { alert("Something went wrong. Please try again."); return; }
+            headers: {{ "Content-Type": "application/json" }},
+            body: JSON.stringify({{ plan: plan, email: email }})
+          }});
+          if (!resp.ok) {{ alert("Something went wrong. Please try again."); return; }}
           var data = await resp.json();
-          if (data.url) { window.location.href = data.url; }
-          else { alert("Could not start checkout. Please try again."); }
-        } catch(e) { alert("Network error. Please check your connection and try again."); }
-      }
+          if (data.url) {{ window.location.href = data.url; }}
+          else {{ alert("Could not start checkout. Please try again."); }}
+        }} catch(e) {{ alert("Network error. Please check your connection and try again."); }}
+      }}
       </script>
 
     </body>
