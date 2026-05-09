@@ -253,28 +253,28 @@ def home():
         .dashboard-teaser img {{ max-width:100%; border-radius:8px; border:1px solid #1a3050; margin-top:16px; }}
 
         /* Modal */
-        #email-modal { display:none; position:fixed; inset:0; z-index:9999; justify-content:center; align-items:center; background:rgba(7,13,23,0.85); backdrop-filter:blur(6px); }
-        #email-modal.open { display:flex; }
-        .modal-box { background:#0d1a2e; border:1px solid #1a4a7a; border-radius:16px; padding:40px 36px; width:420px; max-width:90vw; box-shadow:0 24px 60px rgba(0,0,0,0.6); position:relative; }
-        .modal-close { position:absolute; top:16px; right:18px; background:none; border:none; color:#4a6080; font-size:1.4rem; cursor:pointer; line-height:1; }
-        .modal-close:hover { color:#4da8ff; }
-        .modal-icon { text-align:center; font-size:2.5rem; margin-bottom:16px; }
-        .modal-title { font-size:1.35rem; font-weight:700; color:#fff; text-align:center; margin-bottom:6px; }
-        .modal-sub { text-align:center; color:#6a8aaa; font-size:0.88rem; margin-bottom:24px; }
-        .plan-badge { display:inline-block; background:#0d2847; color:#4da8ff; border:1px solid #1a4a7a; border-radius:20px; padding:4px 14px; font-size:0.78rem; font-weight:700; text-transform:uppercase; letter-spacing:0.08em; margin-bottom:20px; }
-        .modal-input-wrap { position:relative; margin-bottom:14px; }
-        .modal-input-wrap label { display:block; font-size:0.78rem; color:#6a8aaa; margin-bottom:6px; font-weight:600; text-transform:uppercase; letter-spacing:0.06em; }
-        .modal-input { width:100%; padding:13px 16px; background:#071018; border:1px solid #1a3050; border-radius:8px; color:#ddeeff; font-size:0.95rem; outline:none; transition:border-color 0.2s; box-sizing:border-box; }
-        .modal-input:focus { border-color:#4da8ff; }
-        .modal-input.error { border-color:#f87171; }
-        .modal-error { color:#f87171; font-size:0.8rem; margin-bottom:12px; display:none; }
-        .modal-btn { width:100%; padding:14px; background:#4da8ff; color:#071018; border:none; border-radius:8px; font-weight:700; font-size:1rem; cursor:pointer; transition:background 0.2s; margin-top:4px; }
-        .modal-btn:hover { background:#79bfff; }
-        .modal-btn:disabled { opacity:0.6; cursor:not-allowed; }
-        .modal-btn-row { display:flex; gap:10px; margin-top:10px; }
-        .modal-btn-row .btn-secondary { flex:1; padding:14px; background:#0d2847; color:#4da8ff; border:1px solid #1a4a7a; border-radius:8px; font-weight:700; font-size:0.88rem; cursor:pointer; text-align:center; text-decoration:none; }
-        .modal-btn-row .btn-secondary:hover { background:#1a4a7a; }
-        .modal-note { text-align:center; color:#4a6080; font-size:0.75rem; margin-top:14px; }
+        #email-modal {{ display:none; position:fixed; inset:0; z-index:9999; justify-content:center; align-items:center; background:rgba(7,13,23,0.85); backdrop-filter:blur(6px); }}
+        #email-modal.open {{ display:flex; }}
+        .modal-box {{ background:#0d1a2e; border:1px solid #1a4a7a; border-radius:16px; padding:40px 36px; width:420px; max-width:90vw; box-shadow:0 24px 60px rgba(0,0,0,0.6); position:relative; }}
+        .modal-close {{ position:absolute; top:16px; right:18px; background:none; border:none; color:#4a6080; font-size:1.4rem; cursor:pointer; line-height:1; }}
+        .modal-close:hover {{ color:#4da8ff; }}
+        .modal-icon {{ text-align:center; font-size:2.5rem; margin-bottom:16px; }}
+        .modal-title {{ font-size:1.35rem; font-weight:700; color:#fff; text-align:center; margin-bottom:6px; }}
+        .modal-sub {{ text-align:center; color:#6a8aaa; font-size:0.88rem; margin-bottom:24px; }}
+        .plan-badge {{ display:inline-block; background:#0d2847; color:#4da8ff; border:1px solid #1a4a7a; border-radius:20px; padding:4px 14px; font-size:0.78rem; font-weight:700; text-transform:uppercase; letter-spacing:0.08em; margin-bottom:20px; }}
+        .modal-input-wrap {{ position:relative; margin-bottom:14px; }}
+        .modal-input-wrap label {{ display:block; font-size:0.78rem; color:#6a8aaa; margin-bottom:6px; font-weight:600; text-transform:uppercase; letter-spacing:0.06em; }}
+        .modal-input {{ width:100%; padding:13px 16px; background:#071018; border:1px solid #1a3050; border-radius:8px; color:#ddeeff; font-size:0.95rem; outline:none; transition:border-color 0.2s; box-sizing:border-box; }}
+        .modal-input:focus {{ border-color:#4da8ff; }}
+        .modal-input.error {{ border-color:#f87171; }}
+        .modal-error {{ color:#f87171; font-size:0.8rem; margin-bottom:12px; display:none; }}
+        .modal-btn {{ width:100%; padding:14px; background:#4da8ff; color:#071018; border:none; border-radius:8px; font-weight:700; font-size:1rem; cursor:pointer; transition:background 0.2s; margin-top:4px; }}
+        .modal-btn:hover {{ background:#79bfff; }}
+        .modal-btn:disabled {{ opacity:0.6; cursor:not-allowed; }}
+        .modal-btn-row {{ display:flex; gap:10px; margin-top:10px; }}
+        .modal-btn-row .btn-secondary {{ flex:1; padding:14px; background:#0d2847; color:#4da8ff; border:1px solid #1a4a7a; border-radius:8px; font-weight:700; font-size:0.88rem; cursor:pointer; text-align:center; text-decoration:none; }}
+        .modal-btn-row .btn-secondary:hover {{ background:#1a4a7a; }}
+        .modal-note {{ text-align:center; color:#4a6080; font-size:0.75rem; margin-top:14px; }}
       </style>
     </head>
     <body>
